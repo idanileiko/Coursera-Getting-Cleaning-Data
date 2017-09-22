@@ -32,7 +32,7 @@ index <- grepl("Subject|mean|std|Activity", colnames(data))
 data <- data[, index]
 
 # (3) Uses descriptive activity names to name the activities in the data set
-data$activity <- factor(data$activity, levels = activity[, 1], labels = activity[, 2])
+data$Activity <- factor(data$Activity, levels = activity[, 1], labels = activity[, 2])
 
 # (4) Appropriately labels the data set with descriptive variable names
 names <- colnames(data)
